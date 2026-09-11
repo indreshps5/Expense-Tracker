@@ -33,7 +33,7 @@ This is Version 1 of the project. The main goal of this version was to strengthe
 - Java Packages
 - Git & GitHub
 
-📁 Project Structure
+## 📁 Project Structure
 
 ExpenseTracker/
 │
@@ -57,6 +57,7 @@ ExpenseTracker/
 │
 ├── .gitignore
 └── README.md
+
 
 ▶️ How to Run
 
