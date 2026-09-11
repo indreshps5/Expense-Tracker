@@ -33,30 +33,32 @@ This is Version 1 of the project. The main goal of this version was to strengthe
 - Java Packages
 - Git & GitHub
 
-## 📁 Project Structure
+<h2>📁 Project Structure</h2>
 
+<pre>
 ExpenseTracker/
 |
-|-- src/
-|   |-- model/
-|   |   `-- Expense.java
++-- src/
+|   +-- model/
+|   |   +-- Expense.java
 |   |
-|   |-- repository/
-|   |   `-- ExpenseRepository.java
+|   +-- repository/
+|   |   +-- ExpenseRepository.java
 |   |
-|   |-- service/
-|   |   `-- ExpenseService.java
+|   +-- service/
+|   |   +-- ExpenseService.java
 |   |
-|   |-- util/
-|   |   `-- InputUtil.java
+|   +-- util/
+|   |   +-- InputUtil.java
 |   |
-|   `-- Main.java
+|   +-- Main.java
 |
-|-- data/
-|   `-- expenses.txt
++-- data/
+|   +-- expenses.txt
 |
-|-- .gitignore
-`-- README.md
++-- .gitignore
++-- README.md
+</pre>
 
 
 ▶️ How to Run
