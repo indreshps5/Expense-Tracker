@@ -36,27 +36,27 @@ This is Version 1 of the project. The main goal of this version was to strengthe
 ## 📁 Project Structure
 
 ExpenseTracker/
-│
-├── src/
-│   ├── model/
-│   │   └── Expense.java
-│   │
-│   ├── repository/
-│   │   └── ExpenseRepository.java
-│   │
-│   ├── service/
-│   │   └── ExpenseService.java
-│   │
-│   ├── util/
-│   │   └── InputUtil.java
-│   │
-│   └── Main.java
-│
-├── data/
-│   └── expenses.txt
-│
-├── .gitignore
-└── README.md
+|
+|-- src/
+|   |-- model/
+|   |   `-- Expense.java
+|   |
+|   |-- repository/
+|   |   `-- ExpenseRepository.java
+|   |
+|   |-- service/
+|   |   `-- ExpenseService.java
+|   |
+|   |-- util/
+|   |   `-- InputUtil.java
+|   |
+|   `-- Main.java
+|
+|-- data/
+|   `-- expenses.txt
+|
+|-- .gitignore
+`-- README.md
 
 
 ▶️ How to Run
