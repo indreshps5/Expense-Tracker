@@ -81,21 +81,22 @@ java -cp . main
 
 ## 🖥️ Application Menu
 
-```text
-╔══════════════════════════════════════╗
-║          💰 EXPENSE TRACKER          ║
-╠══════════════════════════════════════╣
-║                                      ║
-║   1.  Add Expense                    ║
-║   2.  View All Expenses              ║
-║   3.  Find Expense                   ║
-║   4.  Update Expense                 ║
-║   5.  Delete Expense                 ║
-║   6.  Search Expense                 ║
-║   7.  Expense Summary                ║
-║   8.  Exit                           ║
-║                                      ║
-╚══════════════════════════════════════╝
+<pre>
+╔══════════════════════════════════════════╗
+║            💰 EXPENSE TRACKER            ║
+╠══════════════════════════════════════════╣
+║                                          ║
+║   1.  Add Expense                        ║
+║   2.  View All Expenses                  ║
+║   3.  Find Expense                       ║
+║   4.  Update Expense                     ║
+║   5.  Delete Expense                     ║
+║   6.  Search Expense                     ║
+║   7.  Expense Summary                    ║
+║   8.  Exit                               ║
+║                                          ║
+╚══════════════════════════════════════════╝
+</pre>
 
 💾 Data Storage
 
