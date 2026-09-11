@@ -79,20 +79,23 @@ javac -d . src\model\Expense.java src\service\ExpenseService.java src\repository
 
 java -cp . main
 
-🖥️ Application Menu
+## 🖥️ Application Menu
 
-================================
-         EXPENSE TRACKER
-================================
-1. Add Expense
-2. View All Expenses
-3. Find Expense
-4. Update Expense
-5. Delete Expense
-6. Search Expense
-7. Expense Summary
-0. Exit
-================================
+```text
+╔══════════════════════════════════════╗
+║          💰 EXPENSE TRACKER          ║
+╠══════════════════════════════════════╣
+║                                      ║
+║   1.  Add Expense                    ║
+║   2.  View All Expenses              ║
+║   3.  Find Expense                   ║
+║   4.  Update Expense                 ║
+║   5.  Delete Expense                 ║
+║   6.  Search Expense                 ║
+║   7.  Expense Summary                ║
+║   8.  Exit                           ║
+║                                      ║
+╚══════════════════════════════════════╝
 
 💾 Data Storage
 
