@@ -16,7 +16,7 @@ public class ExpenseService {
 
     public ExpenseService() {
 
-    expenseRepository = new ExpenseRepository("../data/expenses.txt");
+    expenseRepository = new ExpenseRepository("data/expenses.txt");
 
     expenses = expenseRepository.loadExpenses();
 

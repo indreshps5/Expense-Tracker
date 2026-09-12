@@ -10,9 +10,9 @@ import model.Expense;
 import service.ExpenseService;
 import util.InputUtil;
 
-public class main {
+public class Main {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -492,7 +492,7 @@ private static void printExpense(Expense expense) {
 
     System.out.println("----------------------------");
     System.out.println("ID: " + expense.getId());
-    System.out.printf("Amount: ₹%.2f%n", expense.getAmount());
+    System.out.printf("Amount: Rs.%.2f%n", expense.getAmount());
     System.out.println("Category: " + expense.getCategory());
     System.out.println("Description: " + expense.getDescription());
     System.out.println("Date: " + expense.getDate());
