@@ -73,11 +73,11 @@ cd Expense-Tracker
 
 3. Compile the project
 
-javac -d . src\model\Expense.java src\service\ExpenseService.java src\repository\ExpenseRepository.java src\util\InputUtil.java src\main.java
+javac -d . src\model\Expense.java src\service\ExpenseService.java src\repository\ExpenseRepository.java src\util\InputUtil.java src\Main.java
 
 4. Run the application
 
-java -cp . main
+java -cp . Main
 
 ## 🖥️ Application Menu
 
