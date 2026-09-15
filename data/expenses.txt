@@ -1,6 +1,0 @@
-1,480.0,travel,sightseeing,2026-09-11,cash
-3,350.0,food,lunch,2026-09-12,upi
-4,500.0,shopping,shirt,2026-09-12,upi
-5,567.0,food,dinner,2026-09-12,upi
-6,5657.0,travel,vacation,2026-09-12,upi
-7,780.0,food,dinner,2026-09-11,upi
