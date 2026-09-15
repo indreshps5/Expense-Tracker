@@ -207,3 +207,355 @@ Computer Science & Engineering Student
 ---
 
 ⭐ If you found this project interesting, feel free to explore the repository and follow its future development.
+
+
+
+
+
+
+
+
+
+Expense Tracker
+
+A console-based Java Expense Tracker that allows users to manage, search, update, and analyze their expenses.
+
+The project has evolved from a file-based Version 1.0 into Version 2.0, which uses MySQL and JDBC for persistent database storage.
+
+🚀 Current Version
+
+Version 2.0
+
+Version 2.0 replaces the file-based storage from Version 1.0 with a MySQL database and uses JDBC to communicate with the database.
+
+---
+
+✨ Features
+
+- Add new expenses
+- Automatically generate expense IDs using MySQL
+- View all expenses
+- Update existing expenses
+- Delete expenses
+- Find an expense by ID
+- Search expenses by category or description
+- Calculate total expenses
+- View category-wise expense summary
+- Find expenses within a date range
+- Display expenses from newest to oldest
+- Input validation and error handling
+- Persistent storage using MySQL
+
+---
+
+🛠️ Technologies Used
+
+- Java 26
+- MySQL 8.0
+- JDBC
+- Maven
+- MySQL Connector/J
+- Git & GitHub
+
+Java Concepts Used
+
+- Object-Oriented Programming
+- Classes and Objects
+- Encapsulation
+- Packages
+- ArrayList
+- Exception Handling
+- Scanner/Input Validation
+- LocalDate
+- JDBC
+- SQL Queries
+- PreparedStatement
+- ResultSet
+- Database Connectivity
+
+---
+
+📂 Project Structure
+
+ExpenseTracker/
+│
+├── src/
+│   └── main/
+│       └── java/
+│           ├── Main.java
+│           ├── InputHelper.java
+│           │
+│           ├── dao/
+│           │   └── ExpenseDAO.java
+│           │
+│           ├── database/
+│           │   └── DBConnection.java
+│           │
+│           └── model/
+│               └── Expense.java
+│
+├── pom.xml
+├── .gitignore
+└── README.md
+
+Package Responsibilities
+
+"model"
+
+Contains the "Expense" class, which represents an expense object.
+
+"dao"
+
+Contains "ExpenseDAO", responsible for database operations such as:
+
+- INSERT
+- SELECT
+- UPDATE
+- DELETE
+- SEARCH
+- SUM
+- GROUP BY
+- DATE RANGE queries
+
+"database"
+
+Contains "DBConnection", which manages the JDBC connection to MySQL.
+
+"InputHelper"
+
+Handles user input validation and prevents invalid input from crashing the application.
+
+"Main"
+
+Contains the application menu and connects user actions with the required operations.
+
+---
+
+🗄️ Database Setup
+
+Create the database in MySQL:
+
+CREATE DATABASE expense_tracker;
+
+USE expense_tracker;
+
+Create the "expenses" table:
+
+CREATE TABLE expenses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    amount DOUBLE NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    description VARCHAR(255),
+    expense_date DATE NOT NULL,
+    payment_method VARCHAR(50)
+);
+
+The database automatically generates the expense ID using:
+
+AUTO_INCREMENT
+
+---
+
+🔐 Database Password
+
+The MySQL password is not stored directly in the source code.
+
+The application reads it from the environment variable:
+
+DB_PASSWORD
+
+On Windows, set the environment variable using:
+
+setx DB_PASSWORD "your-mysql-password"
+
+After setting it, restart the terminal before running the application.
+
+The password is intentionally kept outside the GitHub repository.
+
+---
+
+▶️ How to Run
+
+1. Clone the repository
+
+git clone https://github.com/indreshps5/Expense-Tracker.git
+
+2. Open the project
+
+cd Expense-Tracker
+
+3. Configure MySQL
+
+Make sure:
+
+- MySQL Server is running
+- The "expense_tracker" database exists
+- The "expenses" table has been created
+- "DB_PASSWORD" contains your MySQL password
+
+4. Build the project
+
+mvn clean package
+
+5. Run the application
+
+Generate the Maven dependency classpath:
+
+mvn dependency:build-classpath -Dmdep.outputFile=cp.txt
+
+Load the classpath:
+
+set /p CP=<cp.txt
+
+Run the application:
+
+java -cp "target\classes;%CP%" Main
+
+---
+
+📋 Application Menu
+
+===== EXPENSE TRACKER V2 =====
+1. Add Expense
+2. View Expenses
+3. Update Expense
+4. Find Expense by ID
+5. Search Expenses
+6. Total Expense
+7. Category-wise Summary
+8. Delete Expense
+9. Find Expenses by Date Range
+0. Exit
+
+---
+
+🔎 Example Operations
+
+Add Expense
+
+The user provides:
+
+- Amount
+- Category
+- Description
+- Date
+- Payment method
+
+The application stores the expense in MySQL and displays the automatically generated ID.
+
+Search Expenses
+
+Expenses can be searched using:
+
+- Category
+- Description
+
+Category Summary
+
+The application uses SQL aggregation to calculate expenses by category.
+
+Example:
+
+Food       : ₹2500.00
+Travel     : ₹1200.00
+Shopping   : ₹1800.00
+
+Date Range
+
+Users can provide a start date and end date to find expenses within a specific period.
+
+---
+
+🧠 What I Learned
+
+This version helped me move from a simple file-based Java application toward a more backend-oriented application.
+
+Through Version 2.0, I practiced:
+
+- Connecting Java applications with MySQL
+- JDBC database connectivity
+- CRUD operations
+- SQL queries
+- PreparedStatement
+- ResultSet
+- Auto-generated database IDs
+- SQL aggregation
+- GROUP BY queries
+- Date-range queries
+- Input validation
+- Maven project structure
+- Environment variables
+- Separating application responsibilities using packages
+
+---
+
+📌 Version History
+
+Version 1.0
+
+The original version used file handling to store expenses locally.
+
+It focused on:
+
+- Java fundamentals
+- OOP
+- ArrayList
+- CRUD operations
+- File handling
+- Exception handling
+- Input validation
+
+Version 1.0 is preserved in the repository through the Git tag/release:
+
+v1.0
+
+Version 2.0 — Current
+
+Version 2.0 introduced:
+
+- MySQL
+- JDBC
+- Maven
+- Database persistence
+- SQL queries
+- Search functionality
+- Category-wise summaries
+- Date-range filtering
+- Improved input validation
+
+Current release:
+
+v2.0
+
+---
+
+🔮 Future Improvements
+
+Possible future versions of the project:
+
+Version 3.0
+
+- Convert the application into a Spring Boot REST API
+- RESTful endpoints
+- Service layer
+- Repository layer
+- API testing
+- Better backend architecture
+
+Version 4.0
+
+- Add a web frontend
+- Connect the frontend with the Spring Boot backend
+- Expense dashboard
+- Charts and analytics
+- User authentication
+
+---
+
+👨‍💻 Author
+
+Indresh Pratap Singh
+
+B.Tech CSE — IET Lucknow
+
+Interested in Java Backend Development and building practical software projects.
